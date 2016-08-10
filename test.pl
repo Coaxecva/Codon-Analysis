@@ -73,6 +73,9 @@ foreach $file (@files)
         }
 
         print $genecounter, "\n";
+        print $newData[0], "\n";
+        print $geneName[0], "\n";
+
         exit;
 
         open (WriteFile, ">>  /home/quangmt/Documents/PerlforCSSR4/Result1/" . $file);
