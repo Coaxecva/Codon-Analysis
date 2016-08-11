@@ -75,7 +75,7 @@ foreach $file (@files)
         my @rawGene=<READFILE>;
         close(READFILE);
 
-        print @rawGene, "\n";
+        #print @rawGene, "\n";
 
         my $genes = "";
         my @geneName = ();
@@ -85,7 +85,7 @@ foreach $file (@files)
         {
            chomp $rawGene[$i];
            next if $rawGene[$i]=~/^$/;
-           if($rawGene[$i] =~ ">" || $rawGene[$i] =~ "/+/")
+           if($rawGene[$i] =~ ">") # || $rawGene[$i] =~ "/+/")
            {
               $genecounter++;
               $newData[$genecounter] = "";
@@ -94,6 +94,7 @@ foreach $file (@files)
            else
            {
               $newData[$genecounter] = $newData[$genecounter] . $rawGene[$i];
+              print $newData[$genecounter], "\n";
            }
         }
 
@@ -104,7 +105,7 @@ foreach $file (@files)
         exit;
 
         open (WriteFile, ">>  /home/quangmt/Documents/PerlforCSSR4/Result1/" . $file);
-        print WriteFile  "Gene ID \tAAA1\tAAC1\tAAG1\tAAT1\tACA1\tACC1\tACG1\tACT1\tAGA1\tAGC1\tAGG1\tAGT1\tATA1\tATC1\tATG1\tATT1\tCAA1\tCAC1\tCAG1\tCAT1\tCCA1\tCCC1\tCCG1\tCCT1\tCGA1\tCGC1\tCGG1\tCGT1\tCTA1\tCTC1\tCTG1\tCTT1\tGAA1\tGAC1\tGAG1\tGAT1\tGCA1\tGCC1\tGCG1\tGCT1\tGGA1\tGGC1\tGGG1\tGGT1\tGTA1\tGTC1\tGTG1\tGTT1\tTAA1\tTAC1\tTAG1\tTAT1\tTCA1\tTCC1\tTCG1\tTCT1\tTGA1\tTGC1\tTGG1\tTGT1\tTTA1\tTTC1\tTTG1	\tTTT1" .
+        print WriteFile  "Gene ID \tAAA1\tAAC1\tAAG1\tAAT1\tACA1\tACC1\tACG1\tACT1\tAGA1\tAGC1\tAGG1\tAGT1\tATA1\tATC1\tATG1\tATT1\tCAA1\tCAC1\tCAG1\tCAT1\tCCA1\tCCC1\tCCG1\tCCT1\tCGA1\tCGC1\tCGG1\tCGT1\tCTA1\tCTC1\tCTG1\tCTT1\tGAA1\tGAC1\tGAG1\tGAT1\tGCA1\tGCC1\tGCG1\tGCT1\tGGA1\tGGC1\tGGG1\tGGT1\tGTA1\tGTC1\tGTG1\tGTT1\tTAA1\tTAC1\tTAG1\tTAT1\tTCA1\tTCC1\tTCG1\tTCT1\tTGA1\tTGC1\tTGG1\tTGT1\tTTA1\tTTC1\tTTG1\tTTT1" .
 "\tAAA2\tAAC2\tAAG2\tAAT2\tACA2\tACC2\tACG2\tACT2\tAGA2\tAGC2\tAGG2\tAGT2\tATA2\tATC2\tATG2\tATT2\tCAA2\tCAC2\tCAG2\tCAT2\tCCA2\tCCC2\tCCG2\tCCT2\tCGA2\tCGC2\tCGG2\tCGT2\tCTA2\tCTC2\tCTG2\tCTT2\tGAA2\tGAC2\tGAG2\tGAT2\tGCA2\tGCC2\tGCG2\tGCT2\tGGA2\tGGC2\tGGG2\tGGT2\tGTA2\tGTC2\tGTG2\tGTT2\tTAA2\tTAC2\tTAG2\tTAT2\tTCA2\tTCC2\tTCG2\tTCT2\tTGA2\tTGC2\tTGG2\tTGT2\tTTA2\tTTC2\tTTG2\tTTT2" .
 "\tAAA3\tAAC3\tAAG3\tAAT3\tACA3\tACC3\tACG3\tACT3\tAGA3\tAGC3\tAGG3\tAGT3\tATA3\tATC3\tATG3\tATT3\tCAA3\tCAC3\tCAG3\tCAT3\tCCA3\tCCC3\tCCG3\tCCT3\tCGA3\tCGC3\tCGG3\tCGT3\tCTA3\tCTC3\tCTG3\tCTT3\tGAA3\tGAC3\tGAG3\tGAT3\tGCA3\tGCC3\tGCG3\tGCT3\tGGA3\tGGC3\tGGG3\tGGT3\tGTA3\tGTC3\tGTG3\tGTT3\tTAA3\tTAC3\tTAG3\tTAT3\tTCA3\tTCC3\tTCG3\tTCT3\tTGA3\tTGC3\tTGG3\tTGT3\tTTA3\tTTC3\tTTG3\tTTT3\n" ;
 
