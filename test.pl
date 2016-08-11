@@ -20,7 +20,28 @@ my @readingFrame = (
 [0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,],
 [0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,]
 );
-my ($AAA1,$AAA2,$AAA3,$AAC1,$AAC2,$AAC3,$AAG1,$AAG2,$AAG3,	$AAT1,	$AAT2,	$AAT3,	$ACA1,	$ACA2,	$ACA3,	$ACC1,	$ACC2,	$ACC3,	$ACG1,	$ACG2,	$ACG3,	$ACT1,	$ACT2,	$ACT3,	$AGA1,	$AGA2,	$AGA3,	$AGC1,	$AGC2,	$AGC3,	$AGG1,	$AGG2,	$AGG3,	$AGT1,	$AGT2,	$AGT3,	$ATA1,	$ATA2,	$ATA3,	$ATC1,	$ATC2,	$ATC3,	$ATG1,	$ATG2,	$ATG3,	$ATT1,	$ATT2,	$ATT3,	$CAA1,	$CAA2,	$CAA3,	$CAC1,	$CAC2,	$CAC3,	$CAG1,	$CAG2,	$CAG3,	$CAT1,	$CAT2,	$CAT3,	$CCA1,	$CCA2,	$CCA3,	$CCC1,	$CCC2,	$CCC3,	$CCG1,	$CCG2,	$CCG3,	$CCT1,	$CCT2,	$CCT3,	$CGA1,	$CGA2,	$CGA3,	$CGC1,	$CGC2,	$CGC3,	$CGG1,	$CGG2,	$CGG3,	$CGT1,	$CGT2,	$CGT3,	$CTA1,	$CTA2,	$CTA3,	$CTC1,	$CTC2,	$CTC3,	$CTG1,	$CTG2,	$CTG3,	$CTT1,	$CTT2,	$CTT3,	$GAA1,	$GAA2,	$GAA3,	$GAC1,	$GAC2,	$GAC3,	$GAG1,	$GAG2,	$GAG3,	$GAT1,	$GAT2,	$GAT3,	$GCA1,	$GCA2,	$GCA3,	$GCC1,	$GCC2,	$GCC3,	$GCG1,	$GCG2,	$GCG3,	$GCT1,	$GCT2,	$GCT3,	$GGA1,	$GGA2,	$GGA3,	$GGC1,	$GGC2,	$GGC3,	$GGG1,	$GGG2,	$GGG3,	$GGT1,	$GGT2,	$GGT3,	$GTA1,	$GTA2,	$GTA3,	$GTC1,	$GTC2,	$GTC3,	$GTG1,	$GTG2,	$GTG3,	$GTT1,	$GTT2,	$GTT3,	$TAA1,	$TAA2,	$TAA3,	$TAC1,	$TAC2,	$TAC3,	$TAG1,	$TAG2,	$TAG3,	$TAT1,	$TAT2,	$TAT3,	$TCA1,	$TCA2,	$TCA3,	$TCC1,	$TCC2,	$TCC3,	$TCG1,	$TCG2,	$TCG3,	$TCT1,	$TCT2,	$TCT3,	$TGA1,	$TGA2,	$TGA3,	$TGC1,	$TGC2,	$TGC3,	$TGG1,	$TGG2,	$TGG3,	$TGT1,	$TGT2,	$TGT3,	$TTA1,	$TTA2,	$TTA3,	$TTC1,	$TTC2,	$TTC3,	$TTG1,	$TTG2,	$TTG3,	$TTT1,	$TTT2,	$TTT3,		) = 0;
+my ($AAA1,$AAA2,$AAA3,$AAC1,$AAC2,$AAC3,$AAG1,$AAG2,$AAG3,	
+    $AAT1,$AAT2,$AAT3,$ACA1,$ACA2,$ACA3,$ACC1,$ACC2,$ACC3,
+    $ACG1,$ACG2,$ACG3,$ACT1,$ACT2,$ACT3,$AGA1,$AGA2,$AGA3,
+    $AGC1,$AGC2,$AGC3,$AGG1,$AGG2,$AGG3,$AGT1,$AGT2,$AGT3,
+    $ATA1,$ATA2,$ATA3,$ATC1,$ATC2,$ATC3,$ATG1,$ATG2,$ATG3,
+    $ATT1,$ATT2,$ATT3,$CAA1,$CAA2,$CAA3,$CAC1,$CAC2,$CAC3,
+    $CAG1,$CAG2,$CAG3,$CAT1,$CAT2,$CAT3,$CCA1,$CCA2,$CCA3,
+    $CCC1,$CCC2,$CCC3,$CCG1,$CCG2,$CCG3,$CCT1,$CCT2,$CCT3,
+    $CGA1,$CGA2,$CGA3,$CGC1,$CGC2,$CGC3,$CGG1,$CGG2,$CGG3,
+    $CGT1,$CGT2,$CGT3,$CTA1,$CTA2,$CTA3,$CTC1,$CTC2,$CTC3,
+    $CTG1,$CTG2,$CTG3,$CTT1,$CTT2,$CTT3,$GAA1,$GAA2,$GAA3,
+    $GAC1,$GAC2,$GAC3,$GAG1,$GAG2,$GAG3,$GAT1,$GAT2,$GAT3,
+    $GCA1,$GCA2,$GCA3,$GCC1,$GCC2,$GCC3,$GCG1,$GCG2,$GCG3,
+    $GCT1,$GCT2,$GCT3,$GGA1,$GGA2,$GGA3,$GGC1,$GGC2,$GGC3,
+    $GGG1,$GGG2,$GGG3,$GGT1,$GGT2,$GGT3,$GTA1,$GTA2,$GTA3,
+    $GTC1,$GTC2,$GTC3,$GTG1,$GTG2,$GTG3,$GTT1,$GTT2,$GTT3,
+    $TAA1,$TAA2,$TAA3,$TAC1,$TAC2,$TAC3,$TAG1,$TAG2,$TAG3,
+    $TAT1,$TAT2,$TAT3,$TCA1,$TCA2,$TCA3,$TCC1,$TCC2,$TCC3,
+    $TCG1,$TCG2,$TCG3,$TCT1,$TCT2,$TCT3,$TGA1,$TGA2,$TGA3,
+    $TGC1,$TGC2,$TGC3,$TGG1,$TGG2,$TGG3,$TGT1,$TGT2,$TGT3,
+    $TTA1,$TTA2,$TTA3,$TTC1,$TTC2,$TTC3,$TTG1,$TTG2,$TTG3,
+    $TTT1,$TTT2,$TTT3,) = 0;
 
 $count = 0;
 for($n=0;$n<scalar(@files);$n++)
@@ -72,9 +93,9 @@ foreach $file (@files)
            }
         }
 
-        print $genecounter, "\n";
-        print $newData[0], "\n";
+        print $genecounter, "\n";        
         print $geneName[0], "\n";
+        print $newData[0], "\n";
 
         exit;
 
