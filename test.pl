@@ -99,8 +99,8 @@ foreach $file (@files)
         }
 
         print $genecounter, "\n";        
-        print $geneName[0], "\n";
-        print $newData[0], "\n";
+        print $geneName[11], "\n";
+        print $newData[11], "\n";
 
         exit;
 
